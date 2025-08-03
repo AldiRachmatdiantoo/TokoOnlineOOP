@@ -48,3 +48,20 @@ fun checkNullOrBlank(text: String): String{
         }
     }
 }
+fun checkMapList(text: String, list: MutableMap<String,Int>): String{
+    while (true){
+        //Tampilkan Produk
+        println("\n")
+        for ((index, entry) in list.entries.withIndex()){
+            println("${index+1}.${entry.key}\nHarga: Rp.${entry.value}\n")
+        }
+        print(text)
+        val inputKeys = readln().lowercase()
+        if (list.any { it.key == inputKeys}){
+            return inputKeys
+        } else {
+            println("\nProduk belum ada!\n")
+            continue
+        }
+    }
+}

@@ -8,7 +8,7 @@ class Menu() {
     val keranjangUser = Keranjang()
     fun menuToko(user: User){
         while (true){
-
+            println("\n")
             println("=====TOKO ONLINE=====")
         val chooseMenu = checkFilterList("Pilih: ", listMenu)
         when(chooseMenu) {
