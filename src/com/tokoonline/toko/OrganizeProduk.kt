@@ -17,9 +17,11 @@ class OrganizeProduk {
     }
 
     fun toCart(keranjang: Keranjang, chooseProduk: String, listProduk: MutableMap<String, Int>){
-        val index = listProduk.keys.indexOf(chooseProduk)
-        val entry = listProduk.entries.elementAt(index)
-        keranjang.listProduk.put(entry.key, entry.value)
+//        val index = listProduk.keys.indexOf(chooseProduk)
+//        val entry = listProduk.entries.elementAt(index)
+        val harga = listProduk[chooseProduk] ?: return
+        keranjang.listProduk[chooseProduk] = harga
+//        keranjang.listProduk.put(entry.key, entry.value)
 
         println("\nBerhasil memasukkan $chooseProduk ke keranjang!\n")
         print("press any key to continue..")
