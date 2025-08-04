@@ -11,26 +11,26 @@ class Produk {
         "buku",
         "kembali"
     )
-    val elektronik = mutableMapOf<String,Int>(
+    val elektronik = mutableMapOf(
         "mouse gaming" to 130000,
         "laptop" to 4000000,
         "keyboard" to 80000,
         "mousepad" to 10000
     )
-    val kopi = mutableMapOf<String, Int>(
+    val kopi = mutableMapOf(
         "kopi kapal api" to 5000,
         "kopi gajah" to 4000,
         "kopi americano" to 10000,
         "capuccino" to 20000
     )
-    val alatTulis = mutableMapOf<String,Int>(
+    val alatTulis = mutableMapOf(
         "pensil" to 2000,
         "penghapus" to 1500,
         "pulpen" to 3000,
         "kertas" to 500,
         "buku tulis" to 4000
     )
-    val buku = mutableMapOf<String,Int>(
+    val buku = mutableMapOf(
         "the stranger" to 60000,
         "notes from the underground" to 45000,
         "1984" to 100000,
