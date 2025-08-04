@@ -13,11 +13,11 @@ class Menu() {
         val chooseMenu = checkFilterList("Pilih: ", listMenu)
         when(chooseMenu) {
             "produk" -> {
-                Produk().produk(keranjangUser)
+                Produk().produk(keranjangUser, chooseMenu)
                 continue
             }
             "produk diskon" -> {
-                println("Belum ada")
+                Produk().produk(keranjangUser, chooseMenu)
                 continue
             }
             "akun saya" -> {

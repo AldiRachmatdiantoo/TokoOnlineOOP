@@ -36,7 +36,20 @@ class Produk {
         "1984" to 100000,
         "white nights" to 45000
     )
-    fun produk(keranjang: Keranjang) {
+    //produk diskon
+    val listProdukDiskon = mutableMapOf(
+        "headset" to 160000,
+        "tws" to 239000,
+        "hokben" to 68000
+    )
+    fun produk(keranjang: Keranjang, chooseMenu: String) {
+
+        when(chooseMenu){
+            "produk diskon" -> {
+                ProdukDiskon().produkDiskon(keranjang, listProdukDiskon)
+                return
+            }
+        }
         while (true) {
             println("\n")
             println("=====CARI PRODUK=====")

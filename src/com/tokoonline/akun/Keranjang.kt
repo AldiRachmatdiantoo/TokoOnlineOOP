@@ -9,7 +9,7 @@ class Keranjang {
         println("\n")
         println("=====KERANJANG=====")
         for ((index, entry) in listProduk.entries.withIndex()){
-            println("${index+1}.${entry.key}\nHarga: Rp.${entry.value.harga}\nJumlah: ${entry.value.jumlah}\n")
+            println("${index+1}.${entry.value.produk}\nHarga: Rp.${entry.value.harga}\nJumlah: ${entry.value.jumlah}\n")
         }
         print("\npress any key to continue: ")
         readln()
